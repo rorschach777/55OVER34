@@ -1,0 +1,10 @@
+
+@function adjustFontSize ($font-size){
+    $val : $font-size / 1.1 ;
+    @return $val;
+}
+
+@function adjustLineHeight ($font-size){
+    $val : $font-size + ($font-size / 1.6);
+    @return $val;
+}

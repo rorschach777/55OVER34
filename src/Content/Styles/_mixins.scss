@@ -1,0 +1,12 @@
+@mixin center-block($x-margin : 0){
+    margin: $x-margin auto;
+    display: block;
+}
+@mixin adjust-font-size-mobile($font-size){
+    // private var
+    $adjusted-size: adjustFontSize($font-size);
+    @media only screen and (max-width: $mobile){
+        font-size: $adjusted-size;
+        line-height: adjustLineHeight($font-size);
+    }
+}
