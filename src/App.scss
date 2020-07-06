@@ -1,0 +1,85 @@
+@import './Content/Styles/index.scss';
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body, html {
+  font-size: 62.5%;
+  font-family: $font-primary, $font-default;
+  background-color: $color-1 !important;
+  height: 100%;
+  width: 100%;
+  color: $color-white !important;
+}
+.App {
+  h6, p{
+      @include center-block(1.5rem);
+      text-align: center;
+      position: relative;
+      top: -6.5rem;
+      @media only screen and (max-width: $mobile){
+          top: -5.5rem;
+      }
+  }
+}
+
+.Typography {
+  h1 {
+      font-size: $h1;
+      line-height: adjustLineHeight($h1);
+      font-family: $font-primary, $font-default;
+  
+      // Mobile adjustments:
+      @include adjust-font-size-mobile($h1);
+  }
+  h2 {
+      font-size: $h2;
+      line-height: adjustLineHeight($h2);
+      font-family: $font-primary, $font-default;
+  
+      // Mobile adjustments:
+      @include adjust-font-size-mobile($h2);
+  }
+  h3 {
+      font-size: $h3;
+      line-height: adjustLineHeight($h3);
+      font-family: $font-primary, $font-default;
+  
+      // Mobile adjustments:
+      @include adjust-font-size-mobile($h3);
+  }
+  h4 {
+      font-size: $h4;
+      line-height: adjustLineHeight($h4);
+      font-family: $font-primary, $font-default;
+  
+      // Mobile adjustments:
+      @include adjust-font-size-mobile($h4);
+  }
+  h5 {
+      font-size: $h5;
+      line-height: adjustLineHeight($h5);
+      font-family: $font-primary, $font-default;
+  
+      // Mobile adjustments:
+      @include adjust-font-size-mobile($h5);
+  }
+  
+  h6 {
+      font-size: $h6;
+      line-height: adjustLineHeight($h6);
+      font-family: $font-primary, $font-default;
+  
+      // Mobile adjustments:
+      @include adjust-font-size-mobile($h6);
+  }
+  p, span, li {
+      font-size: $p;
+      line-height: adjustLineHeight($p);
+      font-family: $font-secondary, $font-default;
+      // Mobile adjustments:
+      @include adjust-font-size-mobile($p);
+  }
+  
+}
+
