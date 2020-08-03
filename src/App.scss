@@ -79,8 +79,15 @@ body, html {
         font-size: $p;
         line-height: adjustLineHeight($p);
         font-family: $font-secondary, $font-default;
+        color: #aaa;
         // Mobile adjustments:
         @include adjust-font-size-mobile($p);
     }
     
 
+.Logo{
+    display: block;
+    width: 300px;
+    margin: 125px auto;
+    padding-top: 20%;
+}
